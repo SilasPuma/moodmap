@@ -54,7 +54,11 @@ class _LogTabState extends State<LogTab> {
                     selected: isSel,
                     onTap: () {
                       setState(() {
-                        if (isSel) selected.remove(i); else selected.add(i);
+                        if (isSel) {
+                          selected.remove(i);
+                        } else {
+                          selected.add(i);
+                        }
                       });
                     },
                   );
@@ -90,7 +94,7 @@ class _LogTabState extends State<LogTab> {
                 AnimatedTextKit(
                   repeatForever: true,
                   pause: const Duration(milliseconds: 1200),
-                  animatedTexts: const [
+                  animatedTexts: [
                     FadeAnimatedText('Tip: Mention topics like work, family, or sleep.'),
                     FadeAnimatedText('Your notes help AI generate insights.'),
                   ],

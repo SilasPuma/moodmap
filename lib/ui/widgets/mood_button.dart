@@ -26,7 +26,11 @@ class _MoodButtonState extends State<MoodButton> with SingleTickerProviderStateM
   void didUpdateWidget(covariant MoodButton oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (widget.selected != oldWidget.selected) {
-      if (widget.selected) _controller.forward(); else _controller.reverse();
+      if (widget.selected) {
+        _controller.forward();
+      } else {
+        _controller.reverse();
+      }
     }
   }
 

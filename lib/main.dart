@@ -40,7 +40,7 @@ class MoodMapApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             surfaceTintColor: Colors.transparent,
           ),
-          cardTheme: CardTheme(
+          cardTheme: CardThemeData(
             color: Colors.white.withOpacity(0.9),
             elevation: 0,
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),

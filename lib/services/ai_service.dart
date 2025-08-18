@@ -45,12 +45,17 @@ class AIService {
     final negativeWords = ['bad', 'sad', 'angry', 'tired', 'worried', 'anxious'];
 
     int score = 0;
-    for (final w in positiveWords) if (lowered.contains(w)) score++;
-    for (final w in negativeWords) if (lowered.contains(w)) score--;
+    for (final w in positiveWords) {
+      if (lowered.contains(w)) score++;
+    }
+    for (final w in negativeWords) {
+      if (lowered.contains(w)) score--;
+    }
 
     String mood;
-    if (score >= 2) mood = 'Positive';
-    else if (score <= -2) mood = 'Negative';
+    if (score >= 2) {
+      mood = 'Positive';
+    } else if (score <= -2) mood = 'Negative';
     else mood = 'Neutral';
 
     if (topics.isEmpty) {

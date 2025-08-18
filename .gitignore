@@ -1,0 +1,11 @@
+.dart_tool/
+.packages
+pubspec.lock
+build/
+.ios/
+.android/
+macos/
+windows/
+linux/
+web/
+.DS_Store

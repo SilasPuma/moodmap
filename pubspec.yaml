@@ -1,0 +1,33 @@
+name: moodmap_ai
+description: A polished Flutter mood tracking app with AI insights.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  provider: ^6.0.5
+  shared_preferences: ^2.2.3
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  fl_chart: ^0.68.0
+  table_calendar: ^3.0.9
+  lottie: ^3.1.2
+  animated_text_kit: ^4.2.2
+  http: ^1.2.2
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/lottie/
